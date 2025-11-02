@@ -1,10 +1,9 @@
-# Advanced Prev Next with Zoom Effect (vQmod)
+# Codesafe Advanced Prev Next with Zoom Effect (vQmod)
 
 ![Extension Screenshot](https://image.opencart.com/cache/5619541e9204a-resize-710x380.jpg)
 
-> **Developer:** [CodeSafe](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=codesafe)  
 > **Extension ID:** 14116  
-> **Compatibility:** OpenCart 1.5.x / 2.x  
+> **Compatibility:** OpenCart 1.4.x / 1.5.x  
 > **Type:** vQmod XML  
 
 ---
@@ -39,7 +38,7 @@ This extension is **100% vQmod-based** and does **not modify any core files**.
 
 ## 🧾 Requirements
 
-- OpenCart 1.5.x – 2.x  
+- OpenCart 1.4.7.x – 1.5.6.x  
 - vQmod 2.4.1 or newer  
 - PHP 5.4+  
 

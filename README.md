@@ -1,39 +1,39 @@
 # Advanced Prev Next with Zoom Effect (vQmod)
 
-![Extension Preview](https://image.opencart.com/cache/5b895663ad26e-resize-710x380.jpg)
+![Extension Screenshot](https://image.opencart.com/cache/5619541e9204a-resize-710x380.jpg)
 
 > **Developer:** [CodeSafe](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=codesafe)  
 > **Extension ID:** 14116  
-> **Compatible with:** OpenCart 1.5.x / 2.x  
+> **Compatibility:** OpenCart 1.5.x / 2.x  
 > **Type:** vQmod XML  
 
 ---
 
 ## 🧩 Overview
 
-**Advanced Prev / Next with Zoom Effect** enhances your product pages by adding previous and next navigation buttons, along with a smooth image zoom feature when hovering over product images.  
-The extension is lightweight and does **not modify any core files**, as it fully operates through the **vQmod XML framework**.
+**Advanced Prev / Next with Zoom Effect** adds convenient **Previous** and **Next** navigation buttons to your product pages, along with a smooth image **Zoom Effect** when hovering over product images.  
+This extension is **100% vQmod-based** and does **not modify any core files**.
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-- 🔁 “Previous” and “Next” navigation between products on the product page  
-- 🔍 Integrated image zoom effect (hover to magnify product images)  
-- 🧱 100 % vQmod-based — no core file changes required  
-- ⚙️ Easy to install and uninstall  
+- 🔁 Navigate between products directly from product pages (Prev / Next)  
+- 🔍 Hover-based image zoom effect  
+- 🧱 Pure vQmod XML – no core modifications  
+- ⚙️ Simple installation and removal  
 - 🎨 Compatible with most OpenCart themes  
-- 💡 Ideal for stores with large product catalogs  
+- 💡 Perfect for stores with large product catalogs  
 
 ---
 
 ## 🛠️ Installation
 
-1. **Download** the extension package (ZIP).  
-2. Make sure **vQmod** is installed on your OpenCart.  
-3. Upload the XML file to `/vqmod/xml/` directory.  
-4. Refresh your modifications cache if needed.  
-5. Visit any product page — you should now see **Prev / Next** buttons and the **Zoom effect** in action!
+1. **Download** the extension ZIP package from the OpenCart Marketplace.  
+2. Make sure **vQmod** is installed on your OpenCart store.  
+3. Upload the `.xml` file to `/vqmod/xml/`.  
+4. Clear modification cache if required.  
+5. Open any product page — you’ll see the new **Prev / Next navigation** and **Zoom Effect** instantly.
 
 ---
 
@@ -41,20 +41,13 @@ The extension is lightweight and does **not modify any core files**, as it fully
 
 - OpenCart 1.5.x – 2.x  
 - vQmod 2.4.1 or newer  
-- PHP 5.4 +  
-
----
-
-## 🧪 Demo Preview
-
-![Product Zoom Example](https://magictoolbox.sirv.com/screenshots/opencart-magic-zoom-sections.png?scale.width=800)  
-![Next/Prev Navigation Example](https://magictoolbox.sirv.com/screenshots/opencart-magic-zoom-plus-sections.png?scale.width=800)
+- PHP 5.4+  
 
 ---
 
 ## 📦 Download
 
-You can download the latest version directly from the OpenCart Marketplace:  
+Get the latest version directly from the OpenCart Marketplace:  
 ➡️ [**Advanced Prev Next with Zoom Effect (vQmod)**](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=14116&filter_member=codesafe)
 
 ---
@@ -62,18 +55,11 @@ You can download the latest version directly from the OpenCart Marketplace:
 ## 🧑‍💻 Author
 
 **CodeSafe**  
-OpenCart Marketplace Profile: [CodeSafe Extensions](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=codesafe)
+🔗 [View Developer Profile](https://www.opencart.com/index.php?route=marketplace/extension&filter_member=codesafe)
 
 ---
 
 ## 📄 License
 
 This extension is distributed under the **OpenCart Marketplace Terms of Use**.  
-No part of this extension may be resold or redistributed without permission.
-
----
-
-## 🖼️ Additional Screenshots
-
-![Extension Installer](https://docs.opencart.com/image/admin-extension-installer-extension-installer.png)
-![Front-End Example](https://www.interserver.net/tips/wp-content/uploads/2017/03/install-extensions-in-opencart-1-1.png)
+Reselling or redistributing without permission is prohibited.

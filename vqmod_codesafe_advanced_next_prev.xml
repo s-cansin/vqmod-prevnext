@@ -1,0 +1,109 @@
+<modification>
+	<id>Codesafe Advanced Next Prev V1.1</id>
+	<version>1.1</version>
+	<vqmver>2.1.6</vqmver>
+	<author>Code Safe</author>
+
+	<file name="catalog/view/theme/default/template/product/product.tpl">
+		<operation>
+			<search position="before"><![CDATA[<?php echo $content_bottom; ?>]]></search>
+			<add><![CDATA[
+
+
+<style>
+
+
+.imagedropshadow {
+    text-decoration: none;
+    display: block;
+    width: 153px;
+    height: 113px;
+   
+    margin: 0 3px 3px 0;
+  
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+a:hover img.imagedropshadow {
+   
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+
+
+
+
+
+</style>
+
+   <br><br>
+
+	<div>
+	  <table style="width: 100%; border-collapse: collapse;">
+				<tr>
+				<?php if ($prev_text!=''){?>	<td align=center><a href="<?php echo $prev_url; ?>"><img src="<?php echo $prev_thumb;  ?>"   class="imagedropshadow" border="0"><br><?php echo $prev_text;?></a></td><?php } ?>
+				<?php if ($next_text!=''){?>	<td align=center><a href="<?php echo $next_url; ?>"><img src="<?php echo $next_thumb;  ?>"   class="imagedropshadow" border="0"><br><?php echo $next_text;?></a></td><?php } ?>
+				</tr>
+		</table>
+	</div>
+
+
+
+
+]]></add>
+		</operation>
+	</file>
+
+
+
+
+
+
+	<file name="catalog/controller/product/product.php">
+		<operation>
+			<search position="after"><![CDATA[$this->data['heading_title'] = $product_info['name'];]]></search>
+			<add><![CDATA[
+
+				$this->load->model('tool/image');
+
+
+			        $rsNext 	= $this->model_catalog_product->getProduct($product_id+1);
+				$rsLast 	= $this->model_catalog_product->getProduct($product_id-1);
+
+				if($rsNext):
+					$this->data['next_url'] = $this->url->link('product/product', 'product_id=' .  $rsNext['product_id']);
+					$this->data['next_text']= $rsNext['name']." &gt;&gt;";
+					$this->data['next_thumb']= $this->model_tool_image->resize($rsNext['image'], 150, 120);
+
+				else:
+					$this->data['next_url'] = '';
+					$this->data['next_text'] = '';
+					$this->data['next_thumb'] = '';
+				endif;
+
+				if($rsLast):
+					$this->data['prev_url'] = $this->url->link('product/product', 'product_id=' .  $rsLast['product_id']);
+					$this->data['prev_text']= "&lt;&lt; ".$rsLast['name'];
+					$this->data['prev_thumb']= $this->model_tool_image->resize($rsLast['image'], 150, 120);
+
+				else:
+					$this->data['prev_thumb'] = '';
+					$this->data['prev_url'] = '';
+					$this->data['prev_text']= null;
+				endif;
+
+]]></add>
+		</operation>
+	</file>
+</modification>
+
